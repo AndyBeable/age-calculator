@@ -6,6 +6,12 @@ $off-black: hsl(0, 0%, 8%);
 $purple: hsl(259, 100%, 65%);
 $light-red: hsl(0, 100%, 67%);
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: $off-white;
   font-family: "Poppins", sans-serif;
@@ -22,21 +28,26 @@ body {
   border-radius: 25px;
   border-bottom-right-radius: 80px;
   padding: 48px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .date {
   &__inputs {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
   }
 
   &__input {
     display: flex;
     flex-direction: column;
+    margin: 0 5px;
 
     & input {
       padding: 1rem;
-      max-width: 55px;
+      max-width: 90px;
       border: 1px solid $light-grey;
       border-radius: 8px;
       color: $off-black;
@@ -51,4 +62,34 @@ body {
       margin-bottom: 5px;
     }
   }
+}
+
+.container {
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px; /* Change this value to increase/decrease the thickness of the line */
+  background-color: grey;
+  z-index: -1;
+}
+
+.tick__container {
+  background-color: #854dff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.image {
+  background-size: cover;
 }

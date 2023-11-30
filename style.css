@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 body {
   background-color: #f0f0f0;
   font-family: "Poppins", sans-serif;
@@ -12,18 +17,23 @@ body {
   width: 500px;
   border-radius: 25px;
   border-bottom-right-radius: 80px;
-  padding: 48px 24px 0 24px; }
+  padding: 48px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .date__inputs {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 32px; }
 
 .date__input {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 5px; }
   .date__input input {
     padding: 1rem;
-    max-width: 55px;
+    max-width: 90px;
     border: 1px solid #dbdbdb;
     border-radius: 8px;
     color: #141414;
@@ -34,3 +44,30 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 5px; }
+
+.container {
+  position: relative; }
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  /* Change this value to increase/decrease the thickness of the line */
+  background-color: grey;
+  z-index: -1; }
+
+.tick__container {
+  background-color: #854dff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; }
+
+.image {
+  background-size: cover; }
