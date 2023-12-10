@@ -67,7 +67,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 20px; }
 
 .image {
   background-size: cover; }
+
+.age {
+  align-self: flex-start; }
+  .age__years, .age__months, .age__days {
+    display: flex; }
+  .age__value {
+    color: #854dff;
+    font-size: 56px;
+    margin-right: 12px; }
+  .age__label {
+    font-size: 56px; }

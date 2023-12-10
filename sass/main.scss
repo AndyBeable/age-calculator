@@ -88,8 +88,29 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-bottom: 20px;
 }
 
 .image {
   background-size: cover;
+}
+
+.age {
+  align-self: flex-start;
+
+  &__years,
+  &__months,
+  &__days {
+    display: flex;
+  }
+
+  &__value {
+    color: $purple;
+    font-size: 56px;
+    margin-right: 12px;
+  }
+
+  &__label {
+    font-size: 56px;
+  }
 }
