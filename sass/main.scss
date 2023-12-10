@@ -104,7 +104,9 @@ body {
     display: flex;
   }
 
-  &__value {
+  &__value--years,
+  &__value--months,
+  &__value--days {
     color: $purple;
     font-size: 56px;
     margin-right: 12px;
