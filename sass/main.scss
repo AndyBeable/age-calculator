@@ -68,13 +68,19 @@ body {
   position: relative;
 }
 
+#calculate__button {
+  border: none;
+  background-color: $white;
+  color: $white;
+}
+
 .container::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  height: 1px; /* Change this value to increase/decrease the thickness of the line */
+  height: 1px;
   background-color: grey;
   z-index: -1;
 }

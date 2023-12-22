@@ -48,6 +48,11 @@ body {
 .container {
   position: relative; }
 
+#calculate__button {
+  border: none;
+  background-color: white;
+  color: white; }
+
 .container::before {
   content: "";
   position: absolute;
@@ -55,7 +60,6 @@ body {
   left: 0;
   right: 0;
   height: 1px;
-  /* Change this value to increase/decrease the thickness of the line */
   background-color: grey;
   z-index: -1; }
 
